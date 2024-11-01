@@ -5,10 +5,10 @@ A secure Node.js API for managing private cookie recipes with user authenticatio
 ## Environment Variables
 The .env file in this project includes the following:
 
-JWT_SECRET: Used to sign JWT tokens.
-SECRET_KEY: AES encryption key for sensitive recipe data.
-PORT: Port for the server to listen on.
-Note: The .env file is included in this repository for demonstration purposes with randomly generated values. In production, never include sensitive information like this in a public repository.
+- JWT_SECRET: Used to sign JWT tokens.
+- SECRET_KEY: AES encryption key for sensitive recipe data.
+- PORT: Port for the server to listen on.
+- Note: The .env file is included in this repository for demonstration purposes with randomly generated values. In production, never include sensitive information like this in a public repository.
 
 ### How to execute the Project?
 
