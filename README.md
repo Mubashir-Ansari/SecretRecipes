@@ -15,3 +15,7 @@ Note: The .env file is included in this repository for demonstration purposes wi
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/memodioTask.git
+   
+2. **Install Dependencies**:
+   ```bash
+   npm install
