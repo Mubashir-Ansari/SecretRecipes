@@ -25,14 +25,10 @@ Note: The .env file is included in this repository for demonstration purposes wi
    npm start
 
 3. **Testing the API with Postmans**
-   Import the Postman Collection and Environments:
-      Import the Postman collection memodioTask.postman_collection.json for ready-to-use API requests.
-      Import the two Postman environments, User 1 and User 2, to easily test user-specific data access and permissions.
+  
 
-## Features
+## Import the Postman Collection and Environments:
 
-- **User Registration**: Register with a unique username and password.
-- **User Login**: Log in to receive a JWT for accessing protected routes.
-- **Add Recipe**: Save encrypted recipes that are accessible only to the user who created them.
-- **Get Recipes**: Retrieve all recipes created by the authenticated user, with recipe data decrypted upon retrieval.
+- Import the Postman collection memodioTask.postman_collection.json for ready-to-use API requests.
+- Import the two Postman environments, User 1 and User 2, to easily test user-specific data access and permissions.
 
