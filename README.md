@@ -1,31 +1,14 @@
-# memodioTask
+# Secret Baking Recipe
 
 A secure Node.js API for managing private cookie recipes with user authentication and authorization. This API enables users to register, log in, and securely manage their own recipes using JWTs for authentication and AES encryption for storing sensitive recipe information.
 
-## Features
+## Environment Variables
+The .env file in this project includes the following:
 
-- **User Registration**: Register with a unique username and password.
-- **User Login**: Log in to receive a JWT for accessing protected routes.
-- **Add Recipe**: Save encrypted recipes that are accessible only to the user who created them.
-- **Get Recipes**: Retrieve all recipes created by the authenticated user, with recipe data decrypted upon retrieval.
-
-### Technologies Used
-
-- **Node.js**: JavaScript runtime environment.
-- **Express**: Web framework for Node.js.
-- **Crypto**: Native Node.js library for AES encryption/decryption.
-- **bcrypt.js**: For hashing passwords.
-- **JWT (jsonwebtoken)**: For managing user sessions via token-based authentication.
-- **express-validator**: For validating and sanitizing user input.
-
-## Getting Started
-
-Follow these instructions to set up and run the project locally.
-
-### Prerequisites
-
-- **Node.js** (v14 or later recommended)
-- **npm** (Node Package Manager)
+JWT_SECRET: Used to sign JWT tokens.
+SECRET_KEY: AES encryption key for sensitive recipe data.
+PORT: Port for the server to listen on.
+Note: The .env file is included in this repository for demonstration purposes with randomly generated values. In production, never include sensitive information like this in a public repository.
 
 ### Installation
 
