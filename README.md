@@ -29,8 +29,8 @@ The .env file in this project includes the following:
 
 ## Import the Postman Collection and Environments:
 
-- Import the Postman collection memodioTask.postman_collection.json for ready-to-use API requests.
-- Import the two Postman environments, User 1 and User 2, to easily test user-specific data access and permissions.
+- Import the Postman collection memodioTask.postman_collection.json, available inside Postman-Collection directory for ready-to-use API requests.
+- Import the two Postman environments, User 1 and User 2,available inside Postman-Collection directory, to easily test user-specific data access and permissions.
 
 ## Run API Requests:
 
