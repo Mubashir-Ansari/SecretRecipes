@@ -32,3 +32,9 @@ Note: The .env file is included in this repository for demonstration purposes wi
 - Import the Postman collection memodioTask.postman_collection.json for ready-to-use API requests.
 - Import the two Postman environments, User 1 and User 2, to easily test user-specific data access and permissions.
 
+## Run API Requests:
+
+- Register a User: Create unique accounts with usernames and passwords.
+- Login User: Obtain a JWT by logging in with the registered credentials.
+- Add a Recipe: Use your token to add a recipe. Only the authenticated user can access their recipes.
+- Get Recipes: Retrieve all recipes belonging to the authenticated user.
