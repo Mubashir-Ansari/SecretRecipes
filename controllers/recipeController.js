@@ -14,10 +14,9 @@ router.post('/', authenticateToken, validateRecipe, (req, res) => {
         return res.status(404).json({ message: 'User not found' });
     }
     const { name, ingredients, instructions } = req.body;
+    // Encryption of Secret recipes
     const encryptedIngredients = encrypt(ingredients);
-    console.log('encrypted Ingredients: ',encryptedIngredients)
     const decryptedIngredients = decrypt(encryptedIngredients);
-    console.log('decrypted Ingredients: ',decryptedIngredients)
     const encryptedInstructions = encrypt(instructions);
 
     const recipe = { id: Date.now().toString(), name, ingredients: encryptedIngredients, instructions: encryptedInstructions };
@@ -33,6 +32,7 @@ router.get('/', authenticateToken, (req, res) => {
     if (!user) {
         return res.status(404).json({ message: 'User not found' });
     }
+    // Decryption of Secret recipes
     const decryptedRecipes = user.recipes.map(recipe => ({
         ...recipe,
         ingredients: decrypt(recipe.ingredients),

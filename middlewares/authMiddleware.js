@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 
+// checking the Auth token for restricted HTTP requests
 function authenticateToken(req, res, next) {
     const token = req.header('Authorization')?.split(' ')[1];
     if (!token) return res.status(401).json({ message: 'Access denied' });

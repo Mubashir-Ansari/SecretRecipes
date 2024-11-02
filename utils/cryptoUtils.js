@@ -5,6 +5,7 @@ if (!process.env.SECRET_KEY) {
     process.exit(1);
 }
 
+// AES 256 encryption algorithm for Secret Recipes
 const key = Buffer.from(process.env.SECRET_KEY, 'hex'); 
 const algorithm = 'aes-256-cbc';
 const ivLength = 16;

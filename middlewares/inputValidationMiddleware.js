@@ -1,5 +1,6 @@
 const { body, validationResult } = require('express-validator');
 
+// this file is responsible for some Input validation rules for registering, login and adding a recipe using express validator
 const validateRegistration = [
     body('username')
         .isString()
